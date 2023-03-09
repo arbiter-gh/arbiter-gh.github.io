@@ -37,11 +37,16 @@ header {
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
-    padding-right: 2em;
+    padding: 1em 2em;
     position: fixed;
     width: 100%;
     background-color: #fff;
+    align-items: center;
 
+}
+
+#main-nav .logo {
+    font-weight: 600;
 }
 
 .nav-links {
@@ -108,7 +113,7 @@ header {
 }
 
 
-#main-nav ul li a.active::before {
+#main-nav ul li.active a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -158,6 +163,7 @@ main .container {
 
 .text .typed-text {
     display: flex;
+    margin-bottom: 1em;
 }
 
 .text .typed-text h1 {
@@ -175,12 +181,78 @@ main .container {
 .typed-cursor {
     color: red;
     font-weight: 100;
-    z-index: -1;
 }
+
+
 
 #secondary-nav {
     display: none;
+    background-color: #fff;
+    padding-top: .5em;
+
 }
+
+#work {
+    height: 100vh;
+}
+
+
+#secondary-nav {
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+#secondary-nav .nav-links {
+    justify-content: space-between;
+    width: 80vw;
+    padding-bottom: 2em;
+    margin: auto;
+
+}
+
+
+.email-container span {
+    margin-right: 10px;
+
+}
+
+.email-container a {
+    color: #34495E;
+}
+
+.email-container:hover a {
+    color: #000;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media (max-width: 700px) {
+    #main-nav .nav-links {
+        display: none;
+    }
+
+
+    #secondary-nav {
+        display: flex;
+    }
+
+    #secondary-nav .nav-links {
+        display: flex;
+    }
+}
+
+
+
 
 
 @media (max-width: 520px) {
@@ -212,20 +284,10 @@ main .container {
 
     #secondary-nav {
         display: flex;
-        justify-content: center;
-        position: fixed;
-        bottom: 0;
-        width: 100vw;
-
     }
 
     #secondary-nav .nav-links {
         display: flex;
-        justify-content: space-between;
-        width: 80vw;
-        padding-bottom: 2em;
-        margin: auot;
-
     }
 
     #secondary-nav a {
