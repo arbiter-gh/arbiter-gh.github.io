@@ -7,19 +7,19 @@
     <script src="https://kit.fontawesome.com/2b669e8263.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
-    <title>Rahul 😀</title>
+    <title>Portfolio.</title>
 </head>
 
 <body>
     <header>
         <nav id="main-nav">
-            <div class="logo">Rahul</div>
+            <div class="logo">Portfolio.</div>
             <ul class="nav-links">
                 <li class="active"><a href="#home">Home</a></li>
                 <!--<li><a href="#work">Work</a></li>
                 <li><a href="#achievements">Achievements</a></li>-->
             </ul>
-            <ul class="social">
+            <!--<ul class="social">
                 <li class="github"><a target="_blank" href="https://github.com/arbiter-gh"><i
                             class="fa fa-github"></i></a></li>
                 <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/rahul-mandal-0a095a1b9/"><i
@@ -28,31 +28,55 @@
                             class="fa fa-twitter"></i></a></li>
                 <li class="instagram"><a target="_blank" href="https://www.instagram.com/imarbiter/"><i
                             class="fa fa-instagram"></i></a></li>
-            </ul>
+            </ul>-->
         </nav>
     </header>
 
     <main>
         <div class="container" id="home">
-            <div class="text ">
-                <h3>Hello</h3>
+            <div class="text">
+                <h3>Hello, It's me </h3>
+                <h1 id="name">Rahul Mandal</h1>
                 <span class="typed-text">
-                    <h1>I'm</h1>
-                    <h1><span class="multitext"></span></h1>
+                    <h1>And I'm a </h1>
+                    <h1><span class="multiText"></span></h1>
                 </span>
-                <div class="email-container">
+                <p>Being a student and a fresher, I am committed to learning
+                    new technology and exploring further new experiences</p>
+
+                <div class="email-container" >
                     <a onclick="copyContent()" href="#">
-                        <span id="email">rahulkumar397222@gmail.com</span>
-                        <i class="fa fa-solid fa-copy"></i>
+
+                        <p id="email">rahulkumar397222<span style="color:red">@</span>gmail.com </p>
+
+                        <span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                     
+                                <path
+                                    d="M254.5,244a3,3,0,0,0-3,3v10.5a3,3,0,0,0,3,3H265a3,3,0,0,0,3-3V247a3,3,0,0,0-3-3Zm-7.5,7.5a3,3,0,0,0-3,3V265a3,3,0,0,0,3,3h10.5a3,3,0,0,0,3-3v-3h-2.25v3a.76.76,0,0,1-.75.75H247a.76.76,0,0,1-.75-.75V254.5a.76.76,0,0,1,.75-.75h3V251.5Z"
+                                    fill="#34495E" transform="translate(-244 -244)" />
+                            </svg></span>
                     </a>
                 </div>
+                <ul class="social">
+                    <li class="github"><a target="_blank" href="https://github.com/arbiter-gh"><i
+                                class="fa fa-github"></i></a></li>
+                    <li class="linkedin"><a target="_blank"
+                            href="https://www.linkedin.com/in/rahul-mandal-0a095a1b9/"><i
+                                class="fa fa-linkedin"></i></a></li>
+                    <li class="twitter"><a target="_blank" href="https://twitter.com/im_arbiter"><i
+                                class="fa fa-twitter"></i></a></li>
+                    <li class="instagram"><a target="_blank" href="https://www.instagram.com/imarbiter/"><i
+                                class="fa fa-instagram"></i></a></li>
+                </ul>
+
 
             </div>
             <div class="image">
                 <!--<img src="" alt="pic">-->
             </div>
         </div>
-
+<!--
         <div id="work" class="container">
             <div>
                 <h2>Work</h2>
@@ -68,64 +92,16 @@
 
                 </div>
             </div>
-        </div>
+        </div>-->
 
-        <!--<nav id="secondary-nav">
-            <ul class="nav-links">
-                <li class="active"><a href="#home"><i class="fa fa-solid fa-home"></i></a></li>
-                <li><a href="#work"><i class="fa fa-solid fa-briefcase"></i></a></li>
-                <li><a href="#achievements"><i class="fa fa-solid fa-star"></i></a></li>
-            </ul>
-        </nav>-->
+
     </main>
     <footer>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.js"
             integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
-        <script>
-            var options = {
-                strings: ['Student', 'Coder', 'Developer', 'Designer'],
-                typeSpeed: 100,
-                backSpeed: 80,
-                loop: true,
-            }
-
-            window.onload = () => {
-                window.setTimeout(startTyping, 100)
-            }
-
-            function startTyping() {
-                var typed = new Typed('.multitext', options)
-            }
-
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-
-            $(document).on('click', 'ul li', function () {
-                $(this).addClass('active').siblings().removeClass('active')
-            })
-
-            let text = document.getElementById('email').innerHTML;
-
-            const copyContent = async () => {
-                try {
-                    await navigator.clipboard.writeText(text);
-                    console.log('Content copied to clipboard');
-                } catch (err) {
-                    console.error('Failed to copy: ', err);
-                }
-            }
-
-
-        </script>
+        <script src="script.js"></script>
 
     </footer>
 </body>

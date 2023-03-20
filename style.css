@@ -6,6 +6,7 @@ main div {
 }
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -47,6 +48,7 @@ header {
 
 #main-nav .logo {
     font-weight: 600;
+    font-size: 1.5em;
 }
 
 .nav-links {
@@ -55,24 +57,33 @@ header {
 }
 
 .social {
-    width: 200px;
+    /*width: 200px;*/
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.social a {
+    color: #34495E;
 }
 
 
 
-#main-nav .github:hover a {
+#home .github:hover a {
     color: #171515;
 }
 
-#main-nav .linkedin:hover a {
+#home .linkedin:hover a {
     color: #0072b1;
 }
 
-#main-nav .twitter:hover a {
+#home .twitter:hover a {
     color: #1DA1F2;
 }
 
-#main-nav .instagram:hover a {
+#home .instagram:hover a {
     color: d6249f;
 }
 
@@ -136,11 +147,11 @@ main .container {
 }
 
 .text {
-    padding-left: 5em;
+    padding-left: 7em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh
+    height: 90vh
 }
 
 .text h3 {
@@ -159,24 +170,24 @@ main .container {
     bottom: 2px;
 }
 
-
+.text>h1 {
+    font-size: 4em;
+}
 
 .text .typed-text {
     display: flex;
     margin-bottom: 1em;
+    color: #34495E;
 }
 
-.text .typed-text h1 {
-    font-size: 5em;
-
+.text .typed-text span {
+    color: #000;
 }
 
 
 .typed-text h1:first-child {
-    margin-right: 25px;
-    color: #34495E;
+    margin-right: .5em;
 }
-
 
 .typed-cursor {
     color: red;
@@ -185,49 +196,33 @@ main .container {
 
 
 
-#secondary-nav {
-    display: none;
-    background-color: #fff;
-    padding-top: .5em;
-
-}
-
 #work {
     height: 100vh;
 }
 
-
-#secondary-nav {
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-}
-
-
-#secondary-nav .nav-links {
-    justify-content: space-between;
-    width: 80vw;
-    padding-bottom: 2em;
-    margin: auto;
-
-}
-
-
-.email-container span {
-    margin-right: 10px;
-
+.email-container {
+    margin-top: 1em;
 }
 
 .email-container a {
+    display: flex;
     color: #34495E;
 }
 
-.email-container:hover a {
-    color: #000;
+.email-container p {
+    /*font-family: 'Consolas', sans-serif ;*/
 }
 
+.email-container svg {
+    width: 18px;
+    margin-left: 1em;
+}
 
+.email-container:hover a,
+.email-container:hover #Layer_1{
+    color: #000;
+    fill: #000;
+}
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -256,6 +251,11 @@ main .container {
 
 
 @media (max-width: 520px) {
+
+    #main-nav .logo {
+        font-weight: 600;
+        font-size: 1em;
+    }
     .container {
         flex-direction: column;
     }
@@ -265,53 +265,33 @@ main .container {
     }
 
     .text {
-        height: 60vh;
+        height: 80vh;
         padding-left: 2em;
     }
 
+    .text>h1 {
+        font-size: 2em;
+    }
+
     .text .typed-text h1 {
-        font-size: 3em;
+        font-size: 1.5em;
 
     }
 
     .text .typed-text {
-        flex-direction: column;
+        /*flex-direction: column;*/
     }
 
     #main-nav .nav-links {
         display: none;
     }
 
-    #secondary-nav {
-        display: flex;
+    #name {
+        margin: .2em 0;
     }
 
-    #secondary-nav .nav-links {
-        display: flex;
+    .email-container {
+        margin-top: 2em;
     }
 
-    #secondary-nav a {
-        color: #34495E;
-
-    }
-
-    #secondary-nav svg {
-        transform: scale(1.5);
-
-    }
-
-    #secondary-nav ul a {
-        position: relative;
-        transition: all ease .3s;
-    }
-
-    #secondary-nav ul a.active::before,
-    #secondary-nav ul li:hover a::before {
-        content: "";
-        background-color: red;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: -4;
-    }
 }
