@@ -1,5 +1,5 @@
 var options = {
-    strings: ['Student', 'Coder', 'Developer', 'Designer' ],
+    strings: ['Student', 'Coder', 'Developer', 'Designer'],
     typeSpeed: 100,
     backSpeed: 80,
     loop: true,
@@ -31,11 +31,19 @@ $(document).on('click', 'ul li', function () {
 let text = 'rahulkumar397222@gmail.com'
 
 const copyContent = async () => {
-    
+
     try {
         await navigator.clipboard.writeText(text);
         console.log('Content copied to clipboard');
+        rotate180();
     } catch (err) {
         console.error('Failed to copy: ', err);
     }
+}
+
+function rotate180() {
+    let copy = document.getElementById('copy')
+
+    copy.style.transform = 'rotate(180deg)'
+
 }
