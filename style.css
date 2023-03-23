@@ -73,7 +73,7 @@ header {
     justify-content: space-between;
     width: 250px;
     font-size: 1.5em;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .social a {
@@ -245,6 +245,26 @@ main .container {
     margin-top: 1em;
 }
 
+.download-btn {
+    margin-top: 2em;
+    display: inline;
+}
+.download-btn button{
+    padding: .5em 1em;
+    border: 1px solid #34495E;
+    border-radius: .9em;
+    outline: none;
+    background-color: #fff;
+    color: #34495E;
+    transition: background ease .25s;
+}
+
+.download-btn:hover button {
+    background-color: #34495E;
+    color: #fff;
+    cursor: pointer;
+}
+
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -324,6 +344,10 @@ main .container {
 
     .image img {
         width: 300px;
+    }
+
+    .social {
+        margin-top: 2em;
     }
 
 }
