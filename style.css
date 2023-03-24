@@ -411,7 +411,7 @@ main .container {
 
 
 .download-btn {
-    animation: slidDown 1.5s 1.8s ease forwards;
+    animation: slidUp 1.5s 1.8s ease forwards;
 }
 
 @keyframes slidUp {
