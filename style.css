@@ -249,8 +249,17 @@ main .container {
     margin-top: 2em;
     display: inline;
 }
-.download-btn button{
+
+.download-btn a {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+
+}
+
+.download-btn button {
     padding: .5em 1em;
+
     border: 1px solid #34495E;
     border-radius: .9em;
     outline: none;
@@ -259,7 +268,7 @@ main .container {
     transition: background ease .25s;
 }
 
-.download-btn:hover button {
+.download-btn button:hover {
     background-color: #34495E;
     color: #fff;
     cursor: pointer;
@@ -333,6 +342,7 @@ main .container {
         margin: .2em 0;
     }
 
+
     .email-container {
         margin-top: 2em;
     }
@@ -350,4 +360,104 @@ main .container {
         margin-top: 2em;
     }
 
+}
+
+
+/* Animation */
+
+.greet {
+    animation: slidDown 1.5s ease forwards
+}
+
+.name {
+    animation: slidRight 1.5s ease forwards;
+}
+
+.profession {
+    animation: slidLeft 1.5s ease forwards;
+}
+
+.email-container {
+    animation: slidDown 1.5s ease forwards;
+}
+
+.github,
+.linkedin,
+.twitter,
+.instagram,
+.download-btn {
+    opacity: 0;
+}
+
+
+.github {
+    animation: slidLeft 1.5s 1s ease forwards;
+}
+
+.linkedin {
+    animation: slidLeft 1.5s 1.2s ease forwards;
+
+}
+
+.twitter {
+    animation: slidLeft 1.5s 1.4s ease forwards;
+
+}
+
+.instagram {
+    animation: slidLeft 1.5s 1.6s ease forwards;
+
+}
+
+
+.download-btn {
+    animation: slidDown 1.5s 1.8s ease forwards;
+}
+
+@keyframes slidUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY();
+        opacity: 1;
+    }
+}
+
+@keyframes slidRight {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX();
+        opacity: 1;
+    }
+}
+
+@keyframes slidLeft {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX();
+        opacity: 1;
+    }
+}
+
+@keyframes slidDown {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY();
+        opacity: 1;
+    }
 }
