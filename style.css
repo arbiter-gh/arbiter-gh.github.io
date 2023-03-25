@@ -240,10 +240,17 @@ main .container {
     font-weight: 100;
 }
 
+.image {
+    position: relative;
+}
+
 .image img {
     width: 600px;
     margin-top: 1em;
+    position: absolute;
 }
+
+
 
 .download-btn {
     margin-top: 2em;
