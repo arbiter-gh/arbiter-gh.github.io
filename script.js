@@ -35,15 +35,19 @@ const copyContent = async () => {
     try {
         await navigator.clipboard.writeText(text);
         console.log('Content copied to clipboard');
-        rotate180();
+
+
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar");
+
+        // Add the "show" class to DIV
+        x.className = "show";
+
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function () { x.className = x.className.replace("show", ""); }, 2000);
     } catch (err) {
         console.error('Failed to copy: ', err);
     }
 }
 
-function rotate180() {
-    let copy = document.getElementById('copy')
 
-    copy.style.transform = 'rotate(180deg)'
-
-}
