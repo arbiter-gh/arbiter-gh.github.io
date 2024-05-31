@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Rahul Mandal</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=arbiter-gh&label=Profile%20views&color=0e75b6&style=flat" alt="arbiter-gh" /> </p>
+
+
 
 <p align="left"> <a href="https://twitter.com/im_arbiter" target="blank"><img src="https://img.shields.io/twitter/follow/im_arbiter?logo=twitter&style=for-the-badge" alt="im_arbiter" /></a> </p>
 
